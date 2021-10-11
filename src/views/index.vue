@@ -12,23 +12,23 @@
           </div>
         </el-col>
         <el-col :span="4" align="middle">
-          <div id="Login">
+          <div id="Login" @click="goLogin()">
             <a>登录</a>
           </div>
         </el-col>
       </el-row>
     </nav>
 
-    <!-- 小鲸鱼 -->
+    <!-- TODO小鲸鱼 -->
     <div></div>
 
-    <!-- 产品介绍 -->
+    <!-- TODO产品介绍 -->
     <div></div>
 
-    <!-- 成员介绍 -->
+    <!-- TODO成员介绍 -->
     <div></div>
 
-    <!-- footer -->
+    <!-- TODOfooter -->
     <footer></footer>
 
   </div>
@@ -37,7 +37,12 @@
 
 <script>
 export default {
-
+    name:'index',
+    methods:{
+      goLogin(){
+        this.$router.push({path:'/login'})
+      }
+    }
 }
 </script>
 
