@@ -1,5 +1,23 @@
 <template>
   <div>
+      <vue-particles
+      class="background"
+    color="#292929"
+    :particleOpacity="1"
+    :particlesNumber="80"
+    shapeType="circle"
+    :particleSize="2"
+    linesColor="#292929"
+    :linesWidth="1"
+    :lineLinked="true"
+    :lineOpacity="0.8"
+    :linesDistance="150"
+    :moveSpeed="3"
+    :hoverEffect="true"
+    hoverMode="grab"
+    :clickEffect="true"
+    clickMode="remove"
+  ></vue-particles>
     <nav>
       <el-row :gutter="24">
         <el-col :span="18">
@@ -61,6 +79,7 @@
         </el-col>
       </el-row>
     </div>
+    
   </div>
 </template>
 
@@ -102,6 +121,8 @@ export default {
 nav {
   height: 50px;
   width: 100%;
+  position: relative;
+  z-index:9999;
 }
 #logo {
   margin-top: 5px;
@@ -113,6 +134,9 @@ nav {
   margin: auto;
   margin-top: 100px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  position: relative;
+  z-index:9999;
+  background-color: #ffffff;
 }
 #word {
   font-size: 30px;
@@ -138,4 +162,11 @@ nav {
 .forgetPass {
   font-size: 14px;
 }
+.background{
+    position: absolute;
+    z-index:0;
+    width: 100%;
+    height: 100%;
+}
+
 </style>
