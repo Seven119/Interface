@@ -4,7 +4,9 @@
         <nav>
             <el-row :gutter="24" >
                 <el-col :span="18">
-                    <img src="../assets/nav/logo.png" height="50px" alt="" id="logo">
+                    <div id="Logo">
+                        <img src="../assets/nav/logo.png" height="50px" alt="" id="logo">
+                    </div>
                 </el-col>
                 <el-col :span="2" align="middle">
                     <div id="changeLanguage">
@@ -13,7 +15,8 @@
                 </el-col>
                 <el-col :span="4" align="middle">
                     <div id="Login">
-                        <img src="../assets/nav/touxiang.jpg" alt="" height="50px" width="50px">
+                        <!-- <img src="../assets/nav/touxiang.jpg" alt="" height="50px" width="50px"> -->
+                        <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
                     </div>
                 </el-col>
             </el-row>
@@ -31,9 +34,13 @@ export default {
 nav{
   height: 50px;
   width: 100%;
+  /* background-color: antiquewhite; */
+}
+#Logo{
+  text-align: left;
+  line-height: 50px;
 }
 #logo{
-  margin-top: 5px;
   margin-left: 40px;
 }
 #changeLanguage{
@@ -52,6 +59,7 @@ nav{
   line-height: 50px;
   height: 50px;
   width: 80px;
+  margin-top: 5px;
   border-radius: 10px;
 }
 </style>
