@@ -14,7 +14,7 @@
                     </div>
                 </el-col>
                 <el-col :span="4" align="middle">
-                    <div id="Login">
+                    <div id="Login" @click="goUserIndex()">
                         <!-- <img src="../assets/nav/touxiang.jpg" alt="" height="50px" width="50px"> -->
                         <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
                     </div>
@@ -26,7 +26,11 @@
 
 <script>
 export default {
-
+  methods:{
+    goUserIndex(){
+      this.$router.push({path:'/userIndex'})
+    }
+  }
 }
 </script>
 

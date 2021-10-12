@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import index from '../views/index.vue'
-import userIndex from '../views/userIndex.vue'
+import myModels from '../views/userIndex/myModels.vue'
 import login from '../views/login.vue'
 
 Vue.use(Router)
@@ -17,9 +17,9 @@ export default new Router({
     },
     //个人中心
     {
-      path: '/userIndex',
-      name: 'userIndex',
-      component: userIndex
+      path: '/userIndex/myModels',
+      name: 'myModels',
+      component: myModels
     },
     //登录
     {

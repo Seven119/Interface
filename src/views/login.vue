@@ -105,13 +105,14 @@ export default {
   },
   methods: {
     submitForm() {
-      if (that.checked) {
-        localStorage.setItem("username", that.form.username);
-        localStorage.setItem("password", that.form.password);
-      } else {
-        localStorage.removeItem("username");
-        localStorage.removeItem("password");
-      }
+      // if (that.checked) {
+      //   localStorage.setItem("username", that.form.username);
+      //   localStorage.setItem("password", that.form.password);
+      // } else {
+      //   localStorage.removeItem("username");
+      //   localStorage.removeItem("password");
+      // 
+      this.$router.push({path:'/userIndex/myModels'})
     }
   }
 };
@@ -122,7 +123,7 @@ nav {
   height: 50px;
   width: 100%;
   position: relative;
-  z-index:9999;
+  z-index:9998;
 }
 #logo {
   margin-top: 5px;
