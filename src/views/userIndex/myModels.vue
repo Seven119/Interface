@@ -34,7 +34,8 @@ export default {
         }],
         value: ''
       }
-    }
+    },
+    
 }
 </script>
 

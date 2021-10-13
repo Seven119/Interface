@@ -1,11 +1,11 @@
 <template>
 <!-- 模型卡片 -->
   <div id="modelCard">
-      <div id="modelCardImg">
+      <div id="modelCardImg" @click="goModelsInfo()">
           <img src="../assets/rightNav/箭头_向右两次.svg" style="height:200px; width:300px">
       </div>
       <div id="modelCardInfo">
-        <div id="modelName">模型12345
+        <div id="modelName" @click="goModelsInfo()">模型12345
         <div id="modelCardIcon">
             <i class="el-icon-delete" id="delete" style="color: #409EFF"></i>
             <i class="el-icon-share" style="color: #409EFF"></i>
@@ -17,7 +17,11 @@
 
 <script>
 export default {
-
+    methods:{
+      goModelsInfo(){
+        this.$router.push({path:'../modelsInfo'});
+      }
+    }
 }
 </script>
 
