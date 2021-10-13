@@ -4,9 +4,8 @@ import Router from 'vue-router'
 import index from '../views/index.vue'
 import myModels from '../views/userIndex/myModels.vue'
 import login from '../views/login.vue'
+import creatModels from '../views/creatModels.vue'
 import userIndex from '../views/userIndex.vue'
-import creatModels from '../views/creatModels.vue';
-import userIndex from '../views/userIndex.vue';
 import modelsInfo from '../views/modelsInfo.vue'
 
 Vue.use(Router)
@@ -15,13 +14,13 @@ export default new Router({
   routes: [
     //主页
     {
-      path: '/index',
+      path: '/',
       name: 'index',
       component: index
     },
     //我的模型
     {
-      path: '/',
+      path: '/myModels',
       name: 'myModels',
       component: myModels
     },
