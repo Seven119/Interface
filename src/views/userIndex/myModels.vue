@@ -52,7 +52,8 @@ export default {
       creatModel(){
         this.$router.push({path:'/creatModels'})
       }
-    }
+    },
+    
 }
 </script>
 

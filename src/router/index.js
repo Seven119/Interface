@@ -6,6 +6,8 @@ import myModels from '../views/userIndex/myModels.vue'
 import login from '../views/login.vue'
 import userIndex from '../views/userIndex.vue'
 import creatModels from '../views/creatModels.vue';
+import userIndex from '../views/userIndex.vue';
+import modelsInfo from '../views/modelsInfo.vue'
 
 Vue.use(Router)
 
@@ -23,11 +25,18 @@ export default new Router({
       name: 'myModels',
       component: myModels
     },
-    //个人中心
+
+    //用户个人中心
     {
       path:'/userIndex',
       name:'userIndex',
       component:userIndex
+    },
+    //模型介绍
+    {
+      path:'/modelsInfo',
+      name:'modelsInfo',
+      component:modelsInfo
     },
     //登录
     {

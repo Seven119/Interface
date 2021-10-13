@@ -20,18 +20,18 @@
     </nav>
 
     <!-- TODO小鲸鱼 -->
-    <div class="fish1" :model="fishForm" ref="fishForm">
       <fish></fish>
-    </div>
 
     <!-- TODO产品介绍 -->
-    <div></div>
+    <div class="produce">
+      <div></div>
+    </div>
 
     <!-- TODO成员介绍 -->
     <div></div>
 
     <!-- TODOfooter -->
-    <footer></footer>
+    <allFooter style="margin-top:750px"></allFooter>
 
   </div>
   
@@ -39,9 +39,10 @@
 
 <script>
 import fish from '../components/fish.vue'
+import allFooter from '../components/allFooter.vue'
 export default {
     name:'index',
-    components: {fish},
+    components: {fish,allFooter},
     data(){
       return{
         reportUrl:'index.html'
@@ -88,5 +89,6 @@ nav{
   color: white;
   background-color: #46A1DE;
 }
+
 
 </style>
