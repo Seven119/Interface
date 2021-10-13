@@ -11,8 +11,11 @@
         </el-option>
       </el-select>
       <rightNav></rightNav>
+      <div v-for="(item,index) in list" :key="item.key">
+        <modelCard :key="item.key" :value="item" ::key="index" class="modelCard" ></modelCard>
+      </div>
+    
       
-      <modelCard class="modelCard"></modelCard>
   </div>
 </template>
 
@@ -32,7 +35,14 @@ export default {
           value: '选项2',
           label: '未训练'
         }],
-        value: ''
+        value: '',
+        list:[
+          {val:111,key:1},
+          {val:222,key:2},
+          {val:333,key:3},
+          {val:444,key:4},
+          {val:555,key:5}
+        ]
       }
     }
 }
@@ -54,6 +64,6 @@ export default {
 }
 .modelCard{
   margin-top: 100px;
-
 }
+
 </style>
