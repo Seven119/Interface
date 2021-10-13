@@ -39,6 +39,7 @@ nav{
   height: 50px;
   width: 100%;
   /* background-color: antiquewhite; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
 }
 #Logo{
   text-align: left;

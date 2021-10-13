@@ -20,7 +20,9 @@
     </nav>
 
     <!-- TODO小鲸鱼 -->
-    <div></div>
+    <div class="fish1" :model="fishForm" ref="fishForm">
+      <fish></fish>
+    </div>
 
     <!-- TODO产品介绍 -->
     <div></div>
@@ -36,8 +38,15 @@
 </template>
 
 <script>
+import fish from '../components/fish.vue'
 export default {
     name:'index',
+    components: {fish},
+    data(){
+      return{
+        reportUrl:'index.html'
+      }
+    },
     methods:{
       goLogin(){
         this.$router.push({path:'/login'})
@@ -50,6 +59,7 @@ export default {
 nav{
   height: 50px;
   width: 100%;
+  background-color: white;
 }
 #logo{
   margin-top: 5px;
@@ -77,4 +87,5 @@ nav{
   color: white;
   background-color: #46A1DE;
 }
+
 </style>
