@@ -1,7 +1,7 @@
 <template>
   <div class="userIndex">
       <normalNav></normalNav>
-      <el-button type="primary" class="creatModel">创建模型</el-button>
+      <el-button type="primary" class="creatModel" @click="creatModel()">创建模型</el-button>
       <el-select v-model="value" placeholder="请选择" class="selectDynamic">
         <el-option
           v-for="item in options"
@@ -11,18 +11,24 @@
         </el-option>
       </el-select>
       <rightNav></rightNav>
+      <div v-for="(item,index) in list" :key="item.key">
+        <modelCard :key="item.key" :value="item" ::key="index" class="modelCard" ></modelCard>
+      </div>
+      <pagination></pagination>
+    
       
-      <modelCard class="modelCard"></modelCard>
   </div>
 </template>
 
 <script>
 import normalNav from '../../components/normalNav';
 import rightNav from '../../components/rightNav.vue';
-import modelCard from '../../components/modelCard.vue'
+import modelCard from '../../components/modelCard.vue';
+import pagination from '../../components/pagination'
+import Pagination from '../../components/pagination.vue';
 export default {
     name: 'myModels',
-    components: {normalNav, rightNav, modelCard},
+    components: {normalNav, rightNav, modelCard, pagination, Pagination},
     data() {
       return {
         options: [{
@@ -32,7 +38,19 @@ export default {
           value: '选项2',
           label: '未训练'
         }],
-        value: ''
+        value: '',
+        list:[
+          {val:111,key:1},
+          {val:222,key:2},
+          {val:333,key:3},
+          {val:444,key:4},
+          {val:555,key:5}
+        ]
+      }
+    },
+    methods: {
+      creatModel(){
+        this.$router.push({path:'/creatModels'})
       }
     },
     
@@ -55,6 +73,6 @@ export default {
 }
 .modelCard{
   margin-top: 100px;
-
 }
+
 </style>

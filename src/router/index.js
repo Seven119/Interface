@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import index from '../views/index.vue'
 import myModels from '../views/userIndex/myModels.vue'
 import login from '../views/login.vue'
+import creatModels from '../views/creatModels.vue'
 import userIndex from '../views/userIndex.vue'
 import modelsInfo from '../views/modelsInfo.vue'
 import teamWork from '../views/userIndex/teamWork.vue'
@@ -20,7 +21,7 @@ export default new Router({
     },
     //我的模型
     {
-      path: '/userIndex/myModels',
+      path: '/myModels',
       name: 'myModels',
       component: myModels
     },
@@ -30,6 +31,7 @@ export default new Router({
       name:'teamWork',
       component:teamWork
     },
+
     //用户个人中心
     {
       path:'/userIndex',
@@ -47,6 +49,12 @@ export default new Router({
       path:'/login',
       name:'login',
       component:login
+    },
+    //模型创建
+    {
+      path:'/creatModels',
+      name:'creatModels',
+      component:creatModels
     }
   ]
 })
