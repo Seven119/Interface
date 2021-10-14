@@ -8,6 +8,10 @@ import VueParticles from 'vue-particles'
 import $ from 'jquery'
 import 'element-ui/lib/theme-chalk/index.css'
 
+import echarts from "echarts";
+Vue.prototype.$echarts = echarts;
+
+
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueParticles)

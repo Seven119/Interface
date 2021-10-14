@@ -121,14 +121,15 @@
 <script>
 
 import '../../static/js/jquery.min'
-// import '../../static/js/jquery.transform.min'
+// import '../../static/js/jquery.transform.min' 
 import '../../static/js/script'
 import '../../static/js/mobilyblocks'
 import '../../static/js/superfish'
 import '../../static/js/atooltip.jquery'
 import '../../static/js/pages'
 
-export default {};
+export default {}
+
 </script>
 
 <style></style>
