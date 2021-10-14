@@ -21,7 +21,7 @@
             >
                 <el-menu-item index="1" >
                     <i class="el-icon-user" style="color: white"></i>
-                    <span slot="title">我的模型</span>
+                    <span slot="title" @click="goMyModels()">我的模型</span>
                 </el-menu-item>
                 <el-menu-item index="2" >
                     <i class="el-icon-menu" style="color: white"></i>
@@ -29,11 +29,11 @@
                 </el-menu-item>
                 <el-menu-item index="3" >
                     <i class="el-icon-delete" style="color: white"></i>
-                    <span slot="title">回收站</span>
+                    <span slot="title" @click="goRecycleBin()">回收站</span>
                 </el-menu-item>
                 <el-menu-item index="4" >
                     <i class="el-icon-setting" style="color: white"></i>
-                    <span slot="title">设置</span>
+                    <span slot="title" @click="goUserSetting()">设置</span>
                 </el-menu-item>
             </el-menu>
         </div>
@@ -52,6 +52,15 @@ export default {
     methods: {
       goTeamWork(){
           this.$router.push({path:'../userIndex/teamWork'})
+      },
+      goRecycleBin(){
+          this.$router.push({path:'../userIndex/recycleBin'})
+      },
+      goMyModels(){
+          this.$router.push({path:'../userIndex/myModels'})
+      },
+      goUserSetting(){
+          this.$router.push({path:'../userIndex/userSetting'})
       }
     }
 }
