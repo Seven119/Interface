@@ -7,6 +7,7 @@ import login from '../views/login.vue'
 import creatModels from '../views/creatModels.vue'
 import userIndex from '../views/userIndex.vue'
 import modelsInfo from '../views/modelsInfo.vue'
+import teamWork from '../views/userIndex/teamWork.vue'
 
 Vue.use(Router)
 
@@ -23,6 +24,12 @@ export default new Router({
       path: '/userIndex/myModels',
       name: 'myModels',
       component: myModels
+    },
+    //团队协作
+    {
+      path:'/userindex/teamWork',
+      name:'teamWork',
+      component:teamWork
     },
 
     //用户个人中心

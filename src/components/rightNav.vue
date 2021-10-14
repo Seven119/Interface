@@ -25,7 +25,7 @@
                 </el-menu-item>
                 <el-menu-item index="2" >
                     <i class="el-icon-menu" style="color: white"></i>
-                    <span slot="title">团队协作</span>
+                    <span slot="title" @click="goTeamWork()">团队协作</span>
                 </el-menu-item>
                 <el-menu-item index="3" >
                     <i class="el-icon-delete" style="color: white"></i>
@@ -50,7 +50,9 @@ export default {
       };
     },
     methods: {
-      
+      goTeamWork(){
+          this.$router.push({path:'../userIndex/teamWork'})
+      }
     }
 }
 </script>
