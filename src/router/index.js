@@ -8,6 +8,7 @@ import creatModels from '../views/creatModels.vue'
 import userIndex from '../views/userIndex.vue'
 import modelsInfo from '../views/modelsInfo.vue'
 import teamWork from '../views/userIndex/teamWork.vue'
+import modelInfo from '../views/modelInfo.vue'
 
 Vue.use(Router)
 
@@ -15,7 +16,7 @@ export default new Router({
   routes: [
     //主页
     {
-      path: '/',
+      path: '/index',
       name: 'index',
       component: index
     },
@@ -40,7 +41,7 @@ export default new Router({
     },
     //模型介绍
     {
-      path:'/modelsInfo',
+      path:'/',
       name:'modelsInfo',
       component:modelsInfo
     },

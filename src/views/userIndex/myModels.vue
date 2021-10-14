@@ -14,6 +14,7 @@
       <div v-for="(item,index) in list" :key="item.key">
         <modelCard :key="item.key" :value="item" ::key="index" class="modelCard" ></modelCard>
       </div>
+      <!-- <modelCard></modelCard> -->
       <pagination></pagination>
     
       

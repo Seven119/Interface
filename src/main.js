@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import VueParticles from 'vue-particles' 
+import $ from 'jquery'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
