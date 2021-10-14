@@ -8,6 +8,8 @@ import creatModels from '../views/creatModels.vue'
 import userIndex from '../views/userIndex.vue'
 import modelsInfo from '../views/modelsInfo.vue'
 import teamWork from '../views/userIndex/teamWork.vue'
+import recycleBin from '../views/userIndex/recycleBin.vue'
+import userSetting from '../views/userIndex/userSetting.vue'
 
 Vue.use(Router)
 
@@ -27,11 +29,22 @@ export default new Router({
     },
     //团队协作
     {
-      path:'/userindex/teamWork',
+      path:'/userIndex/teamWork',
       name:'teamWork',
       component:teamWork
     },
-
+    //回收站
+    {
+      path:'/userIndex/recycleBin',
+      name:'recycleBin',
+      component:recycleBin
+    },
+    //设置
+    {
+      path:'/userIndex/userSetting',
+      name:'userSetting',
+      component:userSetting
+    },
     //用户个人中心
     {
       path:'/userIndex',

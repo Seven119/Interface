@@ -1,6 +1,7 @@
 <template>
   <section class="workbench">
     <normalNav></normalNav>
+    
     <div class="content">
       <div class="header-content" style="margin-top:100px">
         <div class="header">
@@ -71,9 +72,10 @@
 
 <script>
 import normalNav from "../../components/normalNav";
+import rightNav from "../../components/rightNav.vue"
 export default {
   name: "teamWork",
-  components: { normalNav },
+  components: { normalNav,rightNav },
 
   data() {
     return {
