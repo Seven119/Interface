@@ -20,7 +20,7 @@ export default new Router({
     },
     //我的模型
     {
-      path: '/myModels',
+      path: '/userIndex/myModels',
       name: 'myModels',
       component: myModels
     },
