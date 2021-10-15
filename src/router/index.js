@@ -11,6 +11,7 @@ import teamWork from '../views/userIndex/teamWork.vue'
 import modelInfo from '../views/modelInfo.vue'
 import recycleBin from '../views/userIndex/recycleBin.vue'
 import userSetting from '../views/userIndex/userSetting.vue'
+import charts from '../views/charts.vue'
 
 import charts from '../views/charts.vue'
 
@@ -20,7 +21,7 @@ export default new Router({
   routes: [
     //主页
     {
-      path: '/',
+      path: '/index',
       name: 'index',
       component: index
     },
@@ -56,7 +57,7 @@ export default new Router({
     },
     //模型介绍
     {
-      path:'/modelsInfo',
+      path:'/',
       name:'modelsInfo',
       component:modelsInfo
     },
