@@ -1,12 +1,14 @@
 <template>
   <div class="modelsInfo">
+    <normalNav></normalNav>
+    <rightNav></rightNav>
     <div class="main">
       <!--content -->
       <section id="content">
         <ul>
           <li id="page_0">
             <div class="inner">
-              <nav class="menu">
+              <div class="menu">
                 <ul id="menu" class="reset">
                   <li id="nav1" style="top: -239.4px;left: 0px;z-index: 49;">
                     <a href="#page_0"
@@ -118,7 +120,7 @@
                     /></a>
                   </li>
                 </ul>
-              </nav>
+              </div>
               <div class="menu_box">
                 <div class="images">
                   <span class="nav1"></span>
@@ -167,27 +169,33 @@
       </section>
       <!--content end-->
     </div>
+    
   </div>
 </template>
 
 <script>
 import "../../static/js/jquery.min";
-<<<<<<< HEAD
 // import '../../static/js/jquery.transform.min' 
-=======
-import '../../static/js/jquery.transform.min' 
->>>>>>> 0c44844b811d34f0d8c16e4e849532231c9d8b74
 import "../../static/js/script";
 import "../../static/js/mobilyblocks";
 import "../../static/js/superfish";
 import "../../static/js/atooltip.jquery";
 import "../../static/js/pages";
 
-export default {}
+import normalNav from '../components/normalNav'
+import rightNav from '../components/rightNav'
+
+export default {
+  name: 'modelsInfo',
+  components: {normalNav, rightNav},
+}
 
 </script>
 
 <style>
+.main{
+  padding-top: 200px;
+}
 ol,
 ul {
   list-style: none;
@@ -217,21 +225,27 @@ ul {
 }
 .images .nav2 {
   background: url("../assets/Info/nav2_hover.png") 0 0 no-repeat;
+  transform: rotate(50deg);
 }
 .images .nav3 {
   background: url("../assets/Info/nav3_hover.png") 0 0 no-repeat;
+  transform: rotate(100deg);
 }
 .images .nav4 {
   background: url("../assets/Info/nav4_hover.png") 0 0 no-repeat;
+  transform: rotate(155deg);
 }
 .images .nav5 {
   background: url("../assets/Info/nav5_hover.png") 0 0 no-repeat;
+  transform: rotate(-155deg);
 }
 .images .nav6 {
   background: url("../assets/Info/nav6_hover.png") 0 0 no-repeat;
+  transform: rotate(-100deg);
 }
 .images .nav7 {
   background: url("../assets/Info/nav7_hover.png") 0 0 no-repeat;
+  transform: rotate(-50deg);
 }
 .images .nav8 {
   background: url("../assets/Info/nav8.png") 0 0 no-repeat;
