@@ -2,8 +2,8 @@
   <div class="charts">
     <normalNav></normalNav>
     <rightNav></rightNav>
-    <div id="main" style="width: 700px; height:500px"></div>
-    <div id="zhexian" style="width:900px; height:500px"></div>
+    <div id="main" style="width: 600px; height:400px"></div>
+    <div id="zhexian" style="width:600px; height:400px"></div>
   </div>
 </template>
 <script>
@@ -241,7 +241,7 @@ export default {
 }
 #zhexian{
     float: right;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-top: 100px;
 }
 </style>
