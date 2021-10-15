@@ -8,60 +8,113 @@
             <div class="inner">
               <nav class="menu">
                 <ul id="menu" class="reset">
-                  <li id="nav1">
+                  <li id="nav1" style="top: -239.4px;left: 0px;z-index: 49;">
                     <a href="#page_0"
-                      ><img src="images/nav1.png" alt="" class="img"/><img
-                        src="images/nav1_active.png"
+                      ><img
+                        src="../assets/Info/nav1.png"
+                        alt=""
+                        class="img"
+                        style="opacity: 1;"/><img
+                        src="../assets/Info/nav1_active.png"
                         alt=""
                         class="img_act"
+                        style="opacity: 0; visibility: hidden;"
                     /></a>
                   </li>
-                  <li id="nav7">
+                  <li
+                    id="nav7"
+                    style="top: -149.263px; left: -187.17px; z-index: 49;"
+                  >
                     <a href="#page_0"
-                      ><img src="images/nav7.png" alt="" class="img"/><img
-                        src="images/nav7_active.png"
+                      ><img
+                        src="../assets/Info/nav7.png"
+                        alt=""
+                        class="img"
+                        style="opacity: 1;"/><img
+                        src="../assets/Info/nav7_active.png"
                         alt=""
                         class="img_act"
+                        style="opacity: 0; visibility: hidden;"
                     /></a>
                   </li>
-                  <li id="nav6">
+                  <li
+                    id="nav6"
+                    style="top: 53.2715px; left: -233.398px; z-index: 49;"
+                  >
                     <a href="#page_0"
-                      ><img src="images/nav6.png" alt="" class="img"/><img
-                        src="images/nav6_active.png"
+                      ><img
+                        src="../assets/Info/nav6.png"
+                        alt=""
+                        class="img"
+                        style="opacity: 1;"/><img
+                        src="../assets/Info/nav6_active.png"
                         alt=""
                         class="img_act"
+                        style="opacity: 0; visibility: hidden;"
                     /></a>
                   </li>
-                  <li id="nav5">
+                  <li
+                    id="nav5"
+                    style="top: 215.692px; left: -103.872px; z-index: 49;"
+                  >
                     <a href="#page_0"
-                      ><img src="images/nav5.png" alt="" class="img"/><img
-                        src="images/nav5_active.png"
+                      ><img
+                        src="../assets/Info/nav5.png"
+                        alt=""
+                        class="img"
+                        style="opacity: 1;"/><img
+                        src="../assets/Info/nav5_active.png"
                         alt=""
                         class="img_act"
+                        style="opacity: 0; visibility: hidden;"
                     /></a>
                   </li>
-                  <li id="nav4">
+                  <li
+                    id="nav4"
+                    style="top: 215.692px; left: 103.872px; z-index: 50;"
+                  >
                     <a href="#page_0"
-                      ><img src="images/nav4.png" alt="" class="img"/><img
-                        src="images/nav4_active.png"
+                      ><img
+                        src="../assets/Info/nav4.png"
+                        alt=""
+                        class="img"
+                        style="opacity: 1;"/><img
+                        src="../assets/Info/nav4_active.png"
                         alt=""
                         class="img_act"
+                        style="opacity: 0; visibility: hidden;"
                     /></a>
                   </li>
-                  <li id="nav3">
+                  <li
+                    id="nav3"
+                    style="top: 53.2715px; left: 233.398px; z-index: 49;"
+                  >
                     <a href="#page_0"
-                      ><img src="images/nav3.png" alt="" class="img"/><img
-                        src="images/nav3_active.png"
+                      ><img
+                        src="../assets/Info/nav3.png"
+                        alt=""
+                        class="img"
+                        style="opacity: 1;"/><img
+                        src="../assets/Info/nav3_active.png"
                         alt=""
                         class="img_act"
+                        style="opacity: 0; visibility: hidden;"
                     /></a>
                   </li>
-                  <li id="nav2">
+                  <li
+                    id="nav2"
+                    style="top: -149.263px; left: 187.17px; z-index: 49;"
+                  >
                     <a href="#page_0"
-                      ><img src="images/nav2.png" alt="" class="img"/><img
-                        src="images/nav2_active.png"
+                      ><img
+                        src="../assets/Info/nav2.png"
+                        alt=""
+                        class="img"
+                        style="opacity: 1;"/><img
+                        src="../assets/Info/nav2_active.png"
                         alt=""
                         class="img_act"
+                        style="opacity: 0; visibility: hidden;"
                     /></a>
                   </li>
                 </ul>
@@ -117,18 +170,265 @@
   </div>
 </template>
 
-
 <script>
-
-import '../../static/js/jquery.min'
+import "../../static/js/jquery.min";
 // import '../../static/js/jquery.transform.min'
-import '../../static/js/script'
-import '../../static/js/mobilyblocks'
-import '../../static/js/superfish'
-import '../../static/js/atooltip.jquery'
-import '../../static/js/pages'
+import "../../static/js/script";
+import "../../static/js/mobilyblocks";
+import "../../static/js/superfish";
+import "../../static/js/atooltip.jquery";
+import "../../static/js/pages";
 
 export default {};
 </script>
 
-<style></style>
+<style>
+ol,
+ul {
+  list-style: none;
+}
+.menu_box {
+  width: 252px;
+  height: 252px;
+  position: absolute;
+  top: -48px;
+  left: -44px;
+}
+.menu_box .images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.images span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.images .nav1 {
+  background: url("../assets/Info/nav1_hover.png") 0 0 no-repeat;
+}
+.images .nav2 {
+  background: url("../assets/Info/nav2_hover.png") 0 0 no-repeat;
+}
+.images .nav3 {
+  background: url("../assets/Info/nav3_hover.png") 0 0 no-repeat;
+}
+.images .nav4 {
+  background: url("../assets/Info/nav4_hover.png") 0 0 no-repeat;
+}
+.images .nav5 {
+  background: url("../assets/Info/nav5_hover.png") 0 0 no-repeat;
+}
+.images .nav6 {
+  background: url("../assets/Info/nav6_hover.png") 0 0 no-repeat;
+}
+.images .nav7 {
+  background: url("../assets/Info/nav7_hover.png") 0 0 no-repeat;
+}
+.images .nav8 {
+  background: url("../assets/Info/nav8.png") 0 0 no-repeat;
+}
+.images .nav9 {
+  background: url("../assets/Info/nav1_hover.png") 0 0 no-repeat;
+}
+
+#menu {
+  display: block;
+  width: 252px;
+  height: 252px;
+}
+#menu > li {
+}
+#menu > li > a {
+  position: relative;
+  display: block;
+  width: 168px;
+  height: 168px;
+}
+#menu > li > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#menu > li > a:hover {
+}
+
+ul.reset li {
+  position: absolute;
+}
+
+.inner {
+  width: 252px;
+  height: 252px;
+  position: relative;
+  margin-top: 255px;
+  margin-left: 387px;
+}
+.trigger {
+  width: 0px !important;
+  height: 0px !important;
+  font-size: 0;
+  line-height: 0;
+}
+
+.menu {
+  z-index: 1;
+  position: relative;
+}
+.menu_box {
+  z-index: 99;
+}
+
+.tittles {
+  text-align: center;
+  line-height: 18px;
+  position: relative;
+}
+.tittles > div {
+  width: 150px;
+  padding-left: 51px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 88px;
+}
+.tittles .nav1 {
+  padding-top: 112px;
+}
+.tittles .nav2 {
+  padding-top: 112px;
+}
+.tittles .nav2:hover {
+}
+.tittles .nav3 {
+  padding-top: 112px;
+}
+.tittles .nav4 {
+  padding-top: 112px;
+}
+.tittles .nav4 .addit_menu {
+}
+.tittles .nav5,
+.tittles .nav6,
+.tittles .nav7,
+.tittles .nav8,
+.tittles .nav9 {
+  padding-top: 112px;
+}
+
+.addit_menu {
+  width: 120px;
+  margin-left: -10px;
+}
+.addit_menu > li {
+  margin-top: -1px;
+  background: url("../assets/Info/menu_line.gif") 10px bottom no-repeat;
+  height: 25px;
+  position: relative;
+}
+.addit_menu > li > a {
+  line-height: 25px;
+  display: block;
+  text-decoration: none;
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  padding: 0 10px;
+  zoom: 1;
+  position: relative;
+}
+.addit_menu > li > a > span {
+  display: block;
+}
+.addit_menu > .end {
+  background: none;
+}
+.addit_menu > .with_ul > a {
+  border-radius: 14px 0 0 14px;
+  -moz-border-radius: 14px 0 0 14px;
+  -webkit-border-radius: 14px 0 0 14px;
+}
+.addit_menu > .with_ul > a > span {
+  background: url("../assets/Info/menu_arrow.gif") right 9px no-repeat;
+}
+.addit_menu > li:hover > a {
+  background: #0d0c0c;
+}
+
+.addit_menu .ul_1,
+.addit_menu .ul_2 {
+  position: absolute;
+  top: 0;
+  left: 114px;
+  width: 147px;
+  padding-right: 1px;
+}
+.addit_menu .ul_1 > li,
+.addit_menu .ul_2 > li {
+  padding-bottom: 1px;
+  position: relative;
+  background: #0d0c0c;
+  padding: 0 12px;
+  zoom: 1;
+}
+.addit_menu .ul_1 > li > a,
+.addit_menu .ul_2 > li > a {
+  text-decoration: none;
+  display: block;
+  line-height: 26px;
+  background: #0d0c0c;
+}
+.addit_menu .ul_1 > li > a span,
+.addit_menu .ul_2 > li > a span {
+  display: block;
+}
+.addit_menu .ul_1 > li > a span span,
+.addit_menu .ul_2 > li > a span span {
+  padding: 0 10px;
+}
+.addit_menu .ul_1 > li:hover > a,
+.addit_menu .ul_2 > li:hover > a {
+  color: #fff;
+  background: #2c2c2c;
+}
+.addit_menu .ul_1 > li:hover > a > span,
+.addit_menu .ul_2 > li:hover > a > span {
+  background: url("../assets/Info/menu_bg_top.png") 0 0 no-repeat;
+}
+.addit_menu .ul_1 > li:hover > a > span span,
+.addit_menu .ul_2 > li:hover > a > span span {
+  background: url("../assets/Info/menu_bg_top.png") top right no-repeat;
+}
+.addit_menu .ul_1 > li:hover,
+.addit_menu .ul_2 > li:hover {
+}
+.addit_menu .ul_1 > .top,
+.addit_menu .ul_2 > .top {
+  background: url("../assets/Info/menu_bg_top.png") 0 0 no-repeat;
+  width: 148px;
+  height: 17px;
+  font-size: 0;
+  line-height: 0;
+}
+.addit_menu .ul_1 > .bot,
+.addit_menu .ul_2 > .bot {
+  background: url("../assets/Info/bg_menu_bot.png") 0 0 no-repeat;
+  width: 148px;
+  height: 17px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.addit_menu .ul_2 {
+  left: 148px;
+  top: -17px;
+}
+.addit_menu .ul_2 > .top {
+  background: url("../assets/Info/menu_bg_top2.png") 0 0 no-repeat;
+}
+</style>

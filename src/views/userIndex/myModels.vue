@@ -14,13 +14,31 @@
       <!-- <div v-for="(item,index) in list" :key="item.key" class="card">
         <FlipCard :key="item.key" :value="item" ::key="index" class="modelCard" ></FlipCard>
       </div> -->
-      <div style="text-align:center;clear:both;margin-top:0px">
-        <!-- <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-        <script src="/follow.js" type="text/javascript"></script> -->
-        </div>
+      
         <rightNav></rightNav>
+
         <div class="content">
-          <a class="card" href="#!">
+        
+          <a class="card" v-for="item in frontMes" :key="item.id">
+          <div class="front" :style="{'background-image':'url('+item.loc+')'}">
+            <div>
+              <p>{{item.detail}}</p>
+            </div>
+          </div>
+           <div class="back">
+              <div>
+                <p>{{item.value}}</p>
+                <p>{{item.word}}</p>
+                <button class="button">Click Here</button>
+                <div id="modelCardIcon">
+                <i class="el-icon-delete" id="delete" @click="goRecycleBin()"></i>
+                  <i class="el-icon-share"></i>
+              </div>
+              </div>
+          </div>
+          </a>
+
+          <!-- <a class="card" href="#!">
             <div class="front" style="background-image: url(assets/card/559.jpg);">
               <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
             </div>
@@ -30,57 +48,8 @@
                 <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
                 <button class="button">Click Here</button>
               </div>
-            </div></a><a class="card" href="#!">
-            <div class="front" style="background-image: url(img/560.jpg);">
-              <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                <button class="button">Click Here</button>
-              </div>
-            </div></a><a class="card" href="#!">
-            <div class="front" style="background-image: url(img/567.jpg);">
-              <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                <button class="button">Click Here</button>
-              </div>
-            </div></a><a class="card" href="#!">
-            <div class="front" style="background-image: url(img/562.jpg);">
-              <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                <button class="button">Click Here</button>
-              </div>
-            </div></a><a class="card" href="#!">
-            <div class="front" style="background-image: url(img/563.jpg);">
-              <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                <button class="button">Click Here</button>
-              </div>
-            </div></a><a class="card" href="#!">
-            <div class="front" style="background-image: url(img/564.jpg);">
-              <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
-                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
-                <button class="button">Click Here</button>
-              </div>
-            </div></a>
+            </div></a> -->
+            
         </div>
         <!-- <FlipCard></FlipCard> -->
         
@@ -109,18 +78,60 @@ export default {
           label: '未训练'
         }],
         value: '',
-        list:[
-          {val:111,key:1},
-          {val:222,key:2},
-          {val:333,key:3},
-          {val:444,key:4},
-          {val:555,key:5}
-        ]
+        //卡片正面信息
+        frontMes:[
+          {
+            id:'1',
+            detail:'Lorem ipsum dolor sit amet consectetur adipisi.',
+            value:'Consectetur adipisicing elit. Possimus, praesentium?',
+            word:'Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.',
+            loc:require('../../assets/card/559.jpg')
+          },
+          {
+            id:'2',
+            detail:'Lorem ipsum dolor sit amet consectetur adipisi.',
+            value:'Consectetur adipisicing elit. Possimus, praesentium?',
+            word:'Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.',
+            loc:require('../../assets/card/560.jpg')
+          },
+          {
+            id:'3',
+            detail:'Lorem ipsum dolor sit amet consectetur adipisi.',
+            value:'Consectetur adipisicing elit. Possimus, praesentium?',
+            word:'Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.',
+            loc:require('../../assets/card/562.jpg')
+          },
+          {
+            id:'4',
+            detail:'Lorem ipsum dolor sit amet consectetur adipisi.',
+            value:'Consectetur adipisicing elit. Possimus, praesentium?',
+            word:'Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.',
+            loc:require('../../assets/card/563.jpg')
+          },
+          {
+            id:'5',
+            detail:'Lorem ipsum dolor sit amet consectetur adipisi.',
+            value:'Consectetur adipisicing elit. Possimus, praesentium?',
+            word:'Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.',
+            loc:require('../../assets/card/564.jpg')
+          },
+          {
+            id:'6',
+            detail:'Lorem ipsum dolor sit amet consectetur adipisi.',
+            value:'Consectetur adipisicing elit. Possimus, praesentium?',
+            word:'Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.',
+            loc:require('../../assets/card/567.jpg')
+          }
+        ],
+        
       }
     },
     methods: {
       creatModel(){
         this.$router.push({path:'/creatModels'})
+      },
+      goRecycleBin(){
+        this.$router.push({path:'/userIndex/recycleBin'})
       }
     },
     
@@ -173,6 +184,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1000px;
+  z-index: 0;
 }
 
 .heading {
@@ -332,5 +344,17 @@ body {
   transform: translateZ(-20px);
   top: 12px;
 
+}
+#modelCardIcon {
+  float: right;
+  height: 30px;
+  margin-top: 20px;
+  width:100%;
+}
+#modelCardIcon i{
+  font-size: 30px;
+  padding: 10px;
+  float: right;
+  color: #409EFF;
 }
 </style>

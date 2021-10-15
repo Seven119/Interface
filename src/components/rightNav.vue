@@ -68,9 +68,10 @@ export default {
 
 <style>
 #rightNav{
+    z-index: 100;
     float: right;
     height: 850px;
-    width: 230px;
+    width: 50px;
     /* background-color: #409EFF; */
 }
 #rightNavImg{
@@ -92,7 +93,7 @@ export default {
     background-color: #409EFF;
 }
 .jiantou{
-    margin-left:190px;
+    /* margin-left:190px; */
     margin-top:350px
 }
 </style>
