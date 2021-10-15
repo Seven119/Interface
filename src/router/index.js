@@ -8,8 +8,11 @@ import creatModels from '../views/creatModels.vue'
 import userIndex from '../views/userIndex.vue'
 import modelsInfo from '../views/modelsInfo.vue'
 import teamWork from '../views/userIndex/teamWork.vue'
+import modelInfo from '../views/modelInfo.vue'
 import recycleBin from '../views/userIndex/recycleBin.vue'
 import userSetting from '../views/userIndex/userSetting.vue'
+
+import charts from '../views/charts.vue'
 
 Vue.use(Router)
 
@@ -68,6 +71,12 @@ export default new Router({
       path:'/creatModels',
       name:'creatModels',
       component:creatModels
+    },
+    //图表展示
+    {
+      path:'/charts',
+      name: 'charts',
+      component:charts
     }
   ]
 })
