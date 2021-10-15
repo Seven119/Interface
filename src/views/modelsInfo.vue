@@ -121,11 +121,7 @@
 <script>
 
 import '../../static/js/jquery.min'
-<<<<<<< HEAD
 // import '../../static/js/jquery.transform.min' 
-=======
-import '../../static/js/jquery.transform.min' 
->>>>>>> 0c44844b811d34f0d8c16e4e849532231c9d8b74
 import '../../static/js/script'
 import '../../static/js/mobilyblocks'
 import '../../static/js/superfish'
