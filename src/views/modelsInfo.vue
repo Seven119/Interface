@@ -196,6 +196,7 @@
 </template>
 
 <script>
+
 import "../../static/js/jquery.min";
 // import '../../static/js/jquery.transform.min'
 import "../../static/js/script";
