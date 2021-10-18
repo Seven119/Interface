@@ -2,199 +2,255 @@
   <div class="modelsInfo">
     <normalNav></normalNav>
     <rightNav></rightNav>
-    <div class="main">
-      <!--content -->
-      <section id="content">
-        <ul>
-          <li id="page_0">
-            <div class="inner">
-              <div class="menu">
-                <ul id="menu" class="reset">
-                  <li id="nav1" style="top: -239.4px;left: 0px;z-index: 49;">
-                    <a href="#page_0"
-                      ><img
-                        src="../assets/Info/nav1.png"
-                        alt=""
-                        class="img"
-                        style="opacity: 1;"/><img
-                        src="../assets/Info/nav1_active.png"
-                        alt=""
-                        class="img_act"
-                        style="opacity: 0; visibility: hidden;"
-                    /></a>
-                  </li>
-                  <li
-                    id="nav7"
-                    style="top: -149.263px; left: -187.17px; z-index: 49;"
-                  >
-                    <a href="#page_0"
-                      ><img
-                        src="../assets/Info/nav7.png"
-                        alt=""
-                        class="img"
-                        style="opacity: 1;"/><img
-                        src="../assets/Info/nav7_active.png"
-                        alt=""
-                        class="img_act"
-                        style="opacity: 0; visibility: hidden;"
-                    /></a>
-                  </li>
-                  <li
-                    id="nav6"
-                    style="top: 53.2715px; left: -233.398px; z-index: 49;"
-                  >
-                    <a href="#page_0"
-                      ><img
-                        src="../assets/Info/nav6.png"
-                        alt=""
-                        class="img"
-                        style="opacity: 1;"/><img
-                        src="../assets/Info/nav6_active.png"
-                        alt=""
-                        class="img_act"
-                        style="opacity: 0; visibility: hidden;"
-                    /></a>
-                  </li>
-                  <li
-                    id="nav5"
-                    style="top: 215.692px; left: -103.872px; z-index: 49;"
-                  >
-                    <a href="#page_0"
-                      ><img
-                        src="../assets/Info/nav5.png"
-                        alt=""
-                        class="img"
-                        style="opacity: 1;"/><img
-                        src="../assets/Info/nav5_active.png"
-                        alt=""
-                        class="img_act"
-                        style="opacity: 0; visibility: hidden;"
-                    /></a>
-                  </li>
-                  <li
-                    id="nav4"
-                    style="top: 215.692px; left: 103.872px; z-index: 50;"
-                  >
-                    <a href="#page_0"
-                      ><img
-                        src="../assets/Info/nav4.png"
-                        alt=""
-                        class="img"
-                        style="opacity: 1;"/><img
-                        src="../assets/Info/nav4_active.png"
-                        alt=""
-                        class="img_act"
-                        style="opacity: 0; visibility: hidden;"
-                    /></a>
-                  </li>
-                  <li
-                    id="nav3"
-                    style="top: 53.2715px; left: 233.398px; z-index: 49;"
-                  >
-                    <a href="#page_0"
-                      ><img
-                        src="../assets/Info/nav3.png"
-                        alt=""
-                        class="img"
-                        style="opacity: 1;"/><img
-                        src="../assets/Info/nav3_active.png"
-                        alt=""
-                        class="img_act"
-                        style="opacity: 0; visibility: hidden;"
-                    /></a>
-                  </li>
-                  <li
-                    id="nav2"
-                    style="top: -149.263px; left: 187.17px; z-index: 49;"
-                  >
-                    <a href="#page_0"
-                      ><img
-                        src="../assets/Info/nav2.png"
-                        alt=""
-                        class="img"
-                        style="opacity: 1;"/><img
-                        src="../assets/Info/nav2_active.png"
-                        alt=""
-                        class="img_act"
-                        style="opacity: 0; visibility: hidden;"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="menu_box">
-                <div class="images">
-                  <span class="nav1"></span>
-                  <span class="nav2"></span>
-                  <span class="nav3"></span>
-                  <span class="nav4"></span>
-                  <span class="nav5"></span>
-                  <span class="nav6"></span>
-                  <span class="nav7"></span>
-                  <span class="nav8"></span>
-                  <span class="nav9"></span>
+    <div class="all">
+      <div class="basicInfo">
+        <div class="modelName">模型名称</div>
+        <div class="team">
+          <h1>团队</h1>
+          <div class="Leader">
+            <h2>创建者</h2>
+            <h3>1234</h3>
+          </div>
+          <div class="Member">
+            <h2>成员</h2>
+            <h3>123/456/789</h3>
+          </div>
+        </div>
+        <div class="date">
+          <h1>修改日期</h1>
+          <h2>123/24/25</h2>
+        </div>
+        <div class="state">
+          <h1>训练状态</h1>
+          <h2>未完成</h2>
+        </div>
+      </div>
+      <div class="main">
+        <section id="content">
+          <ul>
+            <li id="page_0">
+              <div class="inner">
+                <div class="menu">
+                  <ul id="menu" class="reset">
+                    <li id="nav1" style="top: -239.4px;left: 0px;z-index: 49;">
+                      <a href="#page_0"
+                        ><img
+                          src="../assets/Info/nav1.png"
+                          alt=""
+                          class="img"
+                          style="opacity: 1;"/><img
+                          src="../assets/Info/nav1_active.png"
+                          alt=""
+                          class="img_act"
+                          style="opacity: 0; visibility: hidden;"
+                      /></a>
+                    </li>
+                    <li
+                      id="nav7"
+                      style="top: -149.263px; left: -187.17px; z-index: 49;"
+                    >
+                      <a href="#page_0"
+                        ><img
+                          src="../assets/Info/nav7.png"
+                          alt=""
+                          class="img"
+                          style="opacity: 1;"/><img
+                          src="../assets/Info/nav7_active.png"
+                          alt=""
+                          class="img_act"
+                          style="opacity: 0; visibility: hidden;"
+                      /></a>
+                    </li>
+                    <li
+                      id="nav6"
+                      style="top: 53.2715px; left: -233.398px; z-index: 49;"
+                    >
+                      <a href="#page_0"
+                        ><img
+                          src="../assets/Info/nav6.png"
+                          alt=""
+                          class="img"
+                          style="opacity: 1;"/><img
+                          src="../assets/Info/nav6_active.png"
+                          alt=""
+                          class="img_act"
+                          style="opacity: 0; visibility: hidden;"
+                      /></a>
+                    </li>
+                    <li
+                      id="nav5"
+                      style="top: 215.692px; left: -103.872px; z-index: 49;"
+                    >
+                      <a href="#page_0"
+                        ><img
+                          src="../assets/Info/nav5.png"
+                          alt=""
+                          class="img"
+                          style="opacity: 1;"/><img
+                          src="../assets/Info/nav5_active.png"
+                          alt=""
+                          class="img_act"
+                          style="opacity: 0; visibility: hidden;"
+                      /></a>
+                    </li>
+                    <li
+                      id="nav4"
+                      style="top: 215.692px; left: 103.872px; z-index: 50;"
+                    >
+                      <a href="#page_0"
+                        ><img
+                          src="../assets/Info/nav4.png"
+                          alt=""
+                          class="img"
+                          style="opacity: 1;"/><img
+                          src="../assets/Info/nav4_active.png"
+                          alt=""
+                          class="img_act"
+                          style="opacity: 0; visibility: hidden;"
+                      /></a>
+                    </li>
+                    <li
+                      id="nav3"
+                      style="top: 53.2715px; left: 233.398px; z-index: 49;"
+                    >
+                      <a href="#page_0"
+                        ><img
+                          src="../assets/Info/nav3.png"
+                          alt=""
+                          class="img"
+                          style="opacity: 1;"/><img
+                          src="../assets/Info/nav3_active.png"
+                          alt=""
+                          class="img_act"
+                          style="opacity: 0; visibility: hidden;"
+                      /></a>
+                    </li>
+                    <li
+                      id="nav2"
+                      style="top: -149.263px; left: 187.17px; z-index: 49;"
+                    >
+                      <a href="#page_0"
+                        ><img
+                          src="../assets/Info/nav2.png"
+                          alt=""
+                          class="img"
+                          style="opacity: 1;"/><img
+                          src="../assets/Info/nav2_active.png"
+                          alt=""
+                          class="img_act"
+                          style="opacity: 0; visibility: hidden;"
+                      /></a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="tittles">
-                  <div class="nav1">
-                    <h2>Menu 1 &nbsp;</h2>
+                <div class="menu_box">
+                  <div class="images">
+                    <span class="nav1"></span>
+                    <span class="nav2"></span>
+                    <span class="nav3"></span>
+                    <span class="nav4"></span>
+                    <span class="nav5"></span>
+                    <span class="nav6"></span>
+                    <span class="nav7"></span>
+                    <span class="nav8"></span>
+                    <span class="nav9"></span>
                   </div>
-                  <div class="nav2">
-                    <h2>Menu 2 &nbsp;</h2>
-                  </div>
-                  <div class="nav3">
-                    <h2>Menu 3</h2>
-                  </div>
-                  <div class="nav4">
-                    <h2>Menu 4 &nbsp;</h2>
-                  </div>
-                  <div class="nav5">
-                    <h2>Menu 5 &nbsp;</h2>
-                  </div>
-                  <div class="nav6">
-                    <h2>Menu 6 &nbsp;</h2>
-                  </div>
-                  <div class="nav7">
-                    <h2>Menu 7 &nbsp;</h2>
-                  </div>
-                  <div class="nav8">
-                    <h2>Privacy &nbsp;</h2>
-                  </div>
-                  <div class="nav9">
-                    <h2>Read more &nbsp;</h2>
+                  <div class="tittles">
+                    <div class="nav1">
+                      <h2>Menu 1 &nbsp;</h2>
+                    </div>
+                    <div class="nav2">
+                      <h2>Menu 2 &nbsp;</h2>
+                    </div>
+                    <div class="nav3">
+                      <h2>Menu 3</h2>
+                    </div>
+                    <div class="nav4">
+                      <h2>Menu 4 &nbsp;</h2>
+                    </div>
+                    <div class="nav5">
+                      <h2>Menu 5 &nbsp;</h2>
+                    </div>
+                    <div class="nav6">
+                      <h2>Menu 6 &nbsp;</h2>
+                    </div>
+                    <div class="nav7">
+                      <h2>Menu 7 &nbsp;</h2>
+                    </div>
+                    <div class="nav8">
+                      <h2>Privacy &nbsp;</h2>
+                    </div>
+                    <div class="nav9">
+                      <h2>Read more &nbsp;</h2>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <!--content end-->
+            </li>
+          </ul>
+        </section>
+        <!--content end-->
+      </div>
     </div>
-    
   </div>
 </template>
 
 <script>
 import "../../static/js/jquery.min";
-// import '../../static/js/jquery.transform.min' 
+// import '../../static/js/jquery.transform.min'
 import "../../static/js/script";
 import "../../static/js/mobilyblocks";
 import "../../static/js/superfish";
 import "../../static/js/atooltip.jquery";
 import "../../static/js/pages";
 
-import normalNav from '../components/normalNav'
-import rightNav from '../components/rightNav'
+import normalNav from "../components/normalNav";
+import rightNav from "../components/rightNav";
 
 export default {
-  name: 'modelsInfo',
-  components: {normalNav, rightNav},
-}
-
+  name: "modelsInfo",
+  components: { normalNav, rightNav }
+};
 </script>
 
 <style>
-.main{
-  padding-top: 200px;
+.modelsInfo{
+  width: 100%;
+  height: 100%;
+}
+.all {
+  display: flex;
+  height: 100%;
+}
+.main {
+  /* padding-top: 200px;*/
+  margin-right: 400px;
+  margin-top: 200px;
+  float: right;
+  margin-left: 300px;
+}
+.modelName{
+  font-size: 80px;
+  font-weight:bolder;
+}
+h1{
+  font-size: 45px;
+  font-weight:bolder;
+}
+h2{
+  font-size: 30px;
+  font-weight:bold;
+}
+h3{
+  font-size: 25px;
+  font-weight: normal;
+}
+.basicInfo {
+  width: 1000px;
+  height: 500px;
+  float: left;
+  margin-top: 150px;
+  margin-left: -250%;
 }
 ol,
 ul {
